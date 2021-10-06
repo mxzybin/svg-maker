@@ -1,0 +1,96 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+p {
+    padding: 5px 5px 5px 0;
+}
+.square__container {
+    width: 220px;
+    height: 220px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.params {
+    width: 320px;
+}
+.param {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    width: 140px;
+    padding: 5px;
+    margin: 5px;
+}
+.params__radius {
+    display: flex;
+    flex-direction: row;
+}
+
+.params__col__size {
+    display: flex;
+    flex-direction: row;
+}
+
+.instrument__body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.result {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.result__css,
+.result__svg {
+    margin: 10px;
+}
+.result__button {
+    width: 260px;
+    height: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 12px 0;
+    text-align: center;
+    box-sizing: border-box;
+    letter-spacing: 1.5px;
+    transition: .5s;
+}
+.result__button:hover {
+    letter-spacing: 1px;
+}
+
+.svg__area,
+.out__area {
+    width: 260px;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    height: 260px;
+    
+}
+.svg__area:focus,
+.css__area:focus {
+    outline: none;
+}
+.svg__area {
+    resize: none;
+    border: none;
+}
+.css__area {
+    padding-left: 20px;
+    line-height: 20px;
+}

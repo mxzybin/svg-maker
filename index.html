@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="instrument__body">
+        <div class="params">
+            <div class="params__col__size">
+            <div class="param params__color">
+            
+        <label> red <br>
+            <input type="range" name="" id="red" min="0" max="255" step="1"> <br>
+        </label>
+        <label> green <br>
+            <input type="range" name="" id="green" min="0" max="255" step="1"> <br>
+        </label>
+        <label> blue <br>
+            <input type="range" name="" id="blue" min="0" max="255" step="1"> <br>
+        </label>
+            </div>
+            <div class="param params__size">
+    <label class="wd"> Ширина <br>
+<input type="range" name="" id="width" min="0" max="200" step="1"> <br>
+    </label>
+
+<label class="hg"> Высота <br>
+<input type="range" name="" id="height"  min="0" max="200" step="1"> <br>
+</label>
+            </div>
+        </div>
+<div class="params__radius">
+    <div class="param radius__per">
+                <p style="margin: 0 0 8px 0; padding: 0;">Радиус в процентах</p> 
+
+<label  class="lft"> Левый верхний <br>
+<input type="range" name="" id="tl" min="0" max="50" step="1"> <br>
+</label>
+<label  class="rgt"> Правый верхний <br>
+    <input type="range" name="" id="tr" min="0" max="50" step="1"> <br>
+</label>
+<label  class="rgb"> Правый нижний <br>
+    <input type="range" name="" id="br" min="0" max="50" step="1"> <br>
+</label>
+<label  class="lfb"> Левый нижний <br>
+    <input type="range" name="" id="bl" min="0" max="50" step="1" placeholder="0"> <br>
+</label>
+    </div>
+    <div class="param radius__pix">
+    <p style="margin: 0 0 8px 0; padding: 0;">Радиус в пикселях</p>
+    
+    <label  class="lft"> Левый верхний <br>
+        <input type="range" name="" id="tlpx" min="0" max="20" step="1"> <br>
+        </label>
+        <label  class="rgt"> Правый верхний <br>
+            <input type="range" name="" id="trpx" min="0" max="20" step="1"> <br>
+        </label>
+        <label  class="rgb"> Правый нижний <br>
+            <input type="range" name="" id="brpx" min="0" max="20" step="1"> <br>
+        </label>
+        <label  class="lfb"> Левый нижний <br>
+            <input type="range" name="" id="blpx" min="0" max="20" step="1" placeholder="0"> <br>
+        </label>
+
+
+
+    </div>
+</div>
+</div>
+<div class="instrument__right">
+    <div class="square__container">
+        <svg class="square">
+
+        </svg>
+    </div>
+
+<div class="result">
+    <div class="result__css">
+        <div class="result__button get__css">
+            Получить код CSS
+        </div>
+        <div class="out__area" style="background-color: #f3f3f3;">
+            <p style="padding: 0; margin: 0;"><em style="color: #cd7f32">#element   </em>{</p> 
+                <div class="css__area">
+                </div>
+        </div>
+    </div>
+    <div class="result__svg">
+            <div class="result__button get__svg">
+                Получить код SVG
+            </div>
+
+            <textarea readonly class="svg__area">
+            </textarea>
+    </div>
+</div>
+</div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
